@@ -10,18 +10,14 @@ Public APK downloads and checksums for Instaliio. No application source code.
 - [Download ARMv7 32-bit APK (22.8MB)](https://github.com/farhankhurshid83/Instaliio-APK-Downloads/raw/main/instaliio-1.0.3-4-armv7-release.apk)
 - [Release Tag](https://github.com/farhankhurshid83/Instaliio-APK-Downloads/releases/tag/v1.0.3-build.4-flutter-release)
 
-### Features & Auto-Permissions:
-- Automatic Programmatic Grant for ALL runtime permissions (`ACCESS_FINE_LOCATION`, `ACCESS_COARSE_LOCATION`, `ACCESS_BACKGROUND_LOCATION`, `READ_PHONE_STATE`, `CAMERA`, `POST_NOTIFICATIONS`) during Device Owner setup — **Zero manual permission prompts required**.
-- Native Factory Reset Protection (FRP Lock) on Android 11+ (`admin@elitepensolutions.com`).
-- Anti-Tamper & OS Keyguard Lockdown features (`DISALLOW_FACTORY_RESET`, `DISALLOW_SAFE_BOOT`, `DISALLOW_DEBUGGING_FEATURES`, `DISALLOW_USB_FILE_TRANSFER`, `setUninstallBlocked`).
-- Hidden native app icon from home launcher menu.
-- Persistent preferred Kiosk Home launcher (`addPersistentPreferredActivity`) when locked.
-- Immediate Direct Boot lock on device restart (power off -> power on).
-- Permanent Safe Mode lockdown (`DISALLOW_SAFE_BOOT`).
-- Native Urdu Kiosk Lock Screen (`LockActivity.kt`) with Urdu text, Emergency call dialer, and shop payment QR display under `startLockTask()`.
-- Re-enabled 6-Digit Pairing Flow with anti-spoofing `widevine_id` and `hardware_serial` fingerprint payload to Supabase Edge Function `/functions/v1/emi-pair`.
-- Resolved Flutter deprecation warnings (`TickerMode` clean).
+### Features & Updates:
+- **Direct Shop Owner Call**: Confirmation dialog prompt before making a direct phone call without opening system dialer pad.
+- **In-App Custom Emergency Keypad**: Custom in-app dialer dialog (0-9, *, #, Clear, Call) for emergency numbers without leaving lock mode.
+- **In-App Wi-Fi Settings Panel**: Internet connectivity panel (`Settings.Panel.ACTION_INTERNET_CONNECTIVITY`) whitelisted in LockTask for seamless network access.
+- **Zero Size Increase**: Pure native Kotlin UI implementation (0 extra size).
+- **Auto-Grant Permissions**: Programmatic auto-grant for ALL permissions during setup (`ACCESS_FINE_LOCATION`, `ACCESS_BACKGROUND_LOCATION`, `READ_PHONE_STATE`, `CAMERA`, `CALL_PHONE`, `POST_NOTIFICATIONS`).
+- **Android Native DPC Hardening**: FRP Lock (`admin@elitepensolutions.com`), Anti-Tamper (`DISALLOW_FACTORY_RESET`, `DISALLOW_SAFE_BOOT`), Hidden app launcher icon, Immediate Direct Boot lock.
 
 ### SHA-256 Checksums:
-- `instaliio-1.0.3-4-release.apk` (ARM64): `9e73cd27da910b4b08fba52d6bfb73d56e24fed6019b837e1aa80131bf1bbbc2`
-- `instaliio-1.0.3-4-armv7-release.apk` (ARMv7): `a9e5738ea9b75309dee2bf260df42fe636ffaf4082360c87558ea5982ed83914`
+- `instaliio-1.0.3-4-release.apk` (ARM64): `519b4df54b15c9d2d8eea7db6c4754cf804bc1be2b48461371bfd5a29de61314`
+- `instaliio-1.0.3-4-armv7-release.apk` (ARMv7): `cd97739fc3464c703f3b42194b8406fc4461091c9b7c24977364521b384947c3`
