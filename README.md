@@ -11,6 +11,8 @@ Public APK downloads and checksums for Instaliio. No application source code.
 - [Release Tag](https://github.com/farhankhurshid83/Instaliio-APK-Downloads/releases/tag/v1.0.3-build.4-flutter-release)
 
 ### Complete Fixes & Features:
+- **Visible App Launcher Icon**: Re-enabled app launcher icon in home menu app drawer (`category.LAUNCHER`).
+- **Eliminated Home Launcher Selection Prompt**: Disabled `LockHomeAlias` by default in unlocked state so setup & pairing never prompt "Select a Home app / Choose launcher".
 - **Manual 6-Digit PIN Pairing Session Fix**: Allowed manual 6-digit PIN pairing to save customer details, shop details, and installment schedule cleanly without throwing Device Owner check exceptions.
 - **Automatic Uninstallation Prompt on Release**: Triggers Android's native uninstaller prompt (`Intent.ACTION_DELETE`) automatically when handset payment release completes.
 - **Direct Shop Owner Call**: Confirmation dialog prompt before making a direct phone call without opening system dialer pad.
@@ -21,8 +23,8 @@ Public APK downloads and checksums for Instaliio. No application source code.
 - **Mobile Lag/Hanging Fix**: Cached `addPersistentPreferredActivity` so system HOME launcher registration runs once without background loop overhead.
 - **Background Lock Fix**: Enforced `LockActivity` to immediately launch to front when status is `locked` regardless of background state.
 - **Auto-Grant Permissions**: Programmatic auto-grant for ALL permissions during setup (`ACCESS_FINE_LOCATION`, `ACCESS_BACKGROUND_LOCATION`, `READ_PHONE_STATE`, `CAMERA`, `CALL_PHONE`, `POST_NOTIFICATIONS`).
-- **Android Native DPC Hardening**: FRP Lock (`admin@elitepensolutions.com`), Anti-Tamper (`DISALLOW_FACTORY_RESET`, `DISALLOW_SAFE_BOOT`), Hidden app launcher icon, Immediate Direct Boot lock.
+- **Android Native DPC Hardening**: FRP Lock (`admin@elitepensolutions.com`), Anti-Tamper (`DISALLOW_FACTORY_RESET`, `DISALLOW_SAFE_BOOT`), Immediate Direct Boot lock.
 
 ### SHA-256 Checksums:
-- `instaliio-1.0.3-4-release.apk` (ARM64): `da0ebf4f3f893c54dd2b0ec5b4037bbd5a743194df9590f402d03ac9431e24d1`
-- `instaliio-1.0.3-4-armv7-release.apk` (ARMv7): `9b3bbd2248525a6ffd8c0136b2cef8cfe957c63c78e8f3568cc32c9e2e5699eb`
+- `instaliio-1.0.3-4-release.apk` (ARM64): `094479bfe421d7357b67b71a71763e4a4a4c531e6a3ca9af79c836ae28c0e142`
+- `instaliio-1.0.3-4-armv7-release.apk` (ARMv7): `7220a2f2ff525ddfc0e3fc845892625b984dfd33cde16c350cd1fa28183b2397`
