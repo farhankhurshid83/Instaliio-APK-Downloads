@@ -11,6 +11,7 @@ Public APK downloads and checksums for Instaliio. No application source code.
 - [Release Tag](https://github.com/farhankhurshid83/Instaliio-APK-Downloads/releases/tag/v1.0.3-build.4-flutter-release)
 
 ### Complete Fixes & Features:
+- **Manual 6-Digit PIN Pairing Session Fix**: Allowed manual 6-digit PIN pairing to save customer details, shop details, and installment schedule cleanly without throwing Device Owner check exceptions.
 - **Automatic Uninstallation Prompt on Release**: Triggers Android's native uninstaller prompt (`Intent.ACTION_DELETE`) automatically when handset payment release completes.
 - **Direct Shop Owner Call**: Confirmation dialog prompt before making a direct phone call without opening system dialer pad.
 - **In-App Custom Emergency Keypad**: Custom in-app dialer dialog (0-9, *, #, Clear, Call) for emergency numbers without leaving lock mode.
@@ -23,5 +24,5 @@ Public APK downloads and checksums for Instaliio. No application source code.
 - **Android Native DPC Hardening**: FRP Lock (`admin@elitepensolutions.com`), Anti-Tamper (`DISALLOW_FACTORY_RESET`, `DISALLOW_SAFE_BOOT`), Hidden app launcher icon, Immediate Direct Boot lock.
 
 ### SHA-256 Checksums:
-- `instaliio-1.0.3-4-release.apk` (ARM64): `800f57490e28e466986af1b2dc92ea78ef8cd29a3d228dae8e31de6178689e3f`
-- `instaliio-1.0.3-4-armv7-release.apk` (ARMv7): `fc76708879b853dfa55f32e0e07128231f5148fa68d9bca1134764ce80af678c`
+- `instaliio-1.0.3-4-release.apk` (ARM64): `da0ebf4f3f893c54dd2b0ec5b4037bbd5a743194df9590f402d03ac9431e24d1`
+- `instaliio-1.0.3-4-armv7-release.apk` (ARMv7): `9b3bbd2248525a6ffd8c0136b2cef8cfe957c63c78e8f3568cc32c9e2e5699eb`
